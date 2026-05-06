@@ -149,7 +149,12 @@
     p {
       color: var(--cream-soft);
       margin: 0 0 18px;
+      /* text-wrap: pretty avoids single-word last-line widows in supporting
+         browsers (Chrome 117+, Safari 17.4+, Firefox 121+). Older browsers
+         ignore it gracefully. */
+      text-wrap: pretty;
     }
+    h1, h2, .subtitle { text-wrap: balance; }
 
     /* ---- Table of contents ---- */
     .toc {
