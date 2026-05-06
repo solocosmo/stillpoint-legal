@@ -3,10 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Still Point — Terms of Service & Privacy</title>
-  <meta name="description" content="Still Point. Terms of Service and Privacy Policy. By @JvBAtelierDesigns.">
+  <title>Still Point — A Daily Quiet</title>
+  <meta name="description" content="A daily quiet. Seventy original illustrated figures who visit, one at a time, with a single observation for the day. iOS contemplative practice app by JvBAtelierDesigns.">
 
-  <!-- Cardo (italic) for prose, Tenor Sans for tracked headings -->
+  <meta property="og:title" content="Still Point — A Daily Quiet">
+  <meta property="og:description" content="Seventy original illustrated figures. A daily contemplative practice. One visits each morning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://solocosmo.github.io/stillpoint-legal/">
+  <meta name="twitter:card" content="summary">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;1,400&family=Tenor+Sans&display=swap" rel="stylesheet">
@@ -24,7 +29,6 @@
       --gold-deep:    #7A5F2A;
       --border:       #2A2A30;
     }
-
     @media (prefers-color-scheme: light) {
       :root {
         --bg:          #F2EBDC;
@@ -41,243 +45,346 @@
     }
 
     * { box-sizing: border-box; }
-
     html, body {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       background: var(--bg);
       color: var(--cream-soft);
-      font-family: 'Cardo', Georgia, 'Times New Roman', serif;
+      font-family: 'Cardo', Georgia, serif;
       font-style: italic;
       font-size: 17px;
-      line-height: 1.62;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
 
     .wrap {
-      max-width: 640px;
+      max-width: 720px;
       margin: 0 auto;
       padding: 64px 28px 96px;
     }
 
-    /* ---- Brand mark ---- */
+    /* ---- Hero ---- */
+    .hero {
+      text-align: center;
+      padding: 24px 0 48px;
+    }
     .mark {
-      width: 80px;
-      height: 80px;
-      margin: 8px auto 24px;
+      width: 96px; height: 96px;
+      margin: 0 auto 32px;
       border-radius: 50%;
       background:
         radial-gradient(circle at 32% 26%, rgba(255,244,208,0.6), rgba(244,216,138,0) 40%),
         radial-gradient(circle at 35% 30%,
-          #F4D88A 0%,
-          #E8C778 20%,
-          #C9A14A 50%,
-          #9D7E3A 80%,
-          #7A5F2A 100%);
+          #F4D88A 0%, #E8C778 20%, #C9A14A 50%, #9D7E3A 80%, #7A5F2A 100%);
       box-shadow:
         0 0 0 1px rgba(201,161,74,0.15),
-        0 0 24px rgba(201,161,74,0.18),
-        0 0 60px rgba(201,161,74,0.10);
+        0 0 30px rgba(201,161,74,0.22),
+        0 0 80px rgba(201,161,74,0.14);
     }
-
-    /* ---- Headings ---- */
     .eyebrow {
       display: block;
       font-family: 'Tenor Sans', sans-serif;
       font-style: normal;
       font-size: 11.5px;
-      letter-spacing: 0.4em;
+      letter-spacing: 0.45em;
       color: var(--gold);
       text-transform: uppercase;
-      text-align: center;
-      margin: 0 0 12px;
+      margin: 0 0 14px;
     }
-
     h1 {
       font-family: 'Cardo', Georgia, serif;
       font-style: italic;
       font-weight: 400;
-      font-size: 36px;
-      line-height: 1.2;
+      font-size: 56px;
+      line-height: 1.1;
       color: var(--cream);
-      text-align: center;
-      margin: 0 0 8px;
+      margin: 0 0 18px;
+      text-wrap: balance;
+    }
+    .lede {
+      max-width: 480px;
+      margin: 0 auto;
+      color: var(--cream-soft);
+      font-size: 19px;
+      line-height: 1.5;
+      text-wrap: pretty;
     }
 
-    .subtitle {
-      text-align: center;
-      color: var(--cream-muted);
-      font-size: 16.5px;
-      margin: 0 0 36px;
+    section {
+      margin: 56px 0;
     }
-
-    h2 {
+    section.tight {
+      margin: 32px 0;
+    }
+    section h2 {
       font-family: 'Cardo', Georgia, serif;
       font-style: italic;
       font-weight: 400;
       font-size: 28px;
-      line-height: 1.25;
       color: var(--cream);
-      margin: 0 0 12px;
+      margin: 0 0 14px;
+      text-align: center;
+      text-wrap: balance;
     }
-
-    h3 {
-      font-family: 'Tenor Sans', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 11px;
-      letter-spacing: 0.45em;
-      color: var(--gold-soft);
-      text-transform: uppercase;
-      margin: 28px 0 10px;
-    }
-
-    /* ---- Section divider ---- */
-    .divider {
-      height: 1px;
-      background: linear-gradient(
-        to right,
-        transparent 0%,
-        var(--gold-soft) 50%,
-        transparent 100%);
-      opacity: 0.5;
-      margin: 56px 0;
-    }
-
-    /* ---- Body prose ---- */
     p {
-      color: var(--cream-soft);
-      margin: 0 0 18px;
-      /* text-wrap: pretty avoids single-word last-line widows in supporting
-         browsers (Chrome 117+, Safari 17.4+, Firefox 121+). Older browsers
-         ignore it gracefully. */
+      margin: 0 0 16px;
       text-wrap: pretty;
     }
-    h1, h2, .subtitle { text-wrap: balance; }
 
-    /* ---- Table of contents ---- */
-    .toc {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      margin: 0 0 48px;
-      padding: 14px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+    /* ---- Features list ---- */
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 540px;
     }
-    .toc a {
+    .features li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      text-wrap: pretty;
+    }
+    .features li:last-child { border-bottom: 0; }
+    .features strong {
+      font-family: 'Cardo', Georgia, serif;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--cream);
+      display: block;
+      font-size: 19px;
+      margin-bottom: 2px;
+    }
+    .features span {
+      color: var(--cream-muted);
+      font-size: 16px;
+    }
+
+    /* ---- Tiers ---- */
+    .tiers {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 24px 0 0;
+    }
+    .tier {
+      position: relative;
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: rgba(201,161,74,0.025);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 6px 16px;
+      align-items: baseline;
+    }
+    .tier.featured {
+      background: rgba(201,161,74,0.08);
+      border-color: var(--gold);
+    }
+    .tier.dashed {
+      border-style: dashed;
+    }
+    .tier-label {
+      font-family: 'Cardo', Georgia, serif;
+      font-style: normal;
+      font-size: 19px;
+      color: var(--cream);
+    }
+    .tier-price {
+      font-family: 'Cardo', Georgia, serif;
+      font-style: italic;
+      font-size: 19px;
+      color: var(--gold);
+      text-align: right;
+    }
+    .tier-note {
+      grid-column: 1 / -1;
+      font-size: 14px;
+      color: var(--cream-muted);
+    }
+    .tier-tag {
+      position: absolute;
+      top: -9px; left: 18px;
       font-family: 'Tenor Sans', sans-serif;
       font-style: normal;
-      font-size: 11px;
+      font-size: 10px;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      background: var(--bg);
+      padding: 0 8px;
+      text-transform: uppercase;
+    }
+    .free-line {
+      text-align: center;
+      font-size: 14px;
+      color: var(--cream-muted);
+      margin-top: 18px;
+    }
+
+    /* ---- Privacy block ---- */
+    .privacy {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* ---- App Store CTA ---- */
+    .cta {
+      text-align: center;
+      margin-top: 32px;
+    }
+    .cta-btn {
+      display: inline-block;
+      font-family: 'Tenor Sans', sans-serif;
+      font-style: normal;
+      font-size: 11.5px;
       letter-spacing: 0.4em;
       text-transform: uppercase;
       color: var(--gold);
       text-decoration: none;
+      padding: 14px 28px;
+      border: 1px solid var(--gold);
+      border-radius: 2px;
+      transition: background 0.2s ease;
     }
-    .toc a:hover { color: var(--cream); }
+    .cta-btn:hover {
+      background: rgba(201,161,74,0.1);
+    }
+    .cta-note {
+      font-size: 13px;
+      color: var(--cream-faint);
+      margin-top: 12px;
+    }
 
     /* ---- Footer ---- */
     footer {
-      margin-top: 72px;
-      padding-top: 24px;
+      margin-top: 80px;
+      padding-top: 28px;
       border-top: 1px solid var(--border);
       text-align: center;
-      color: var(--cream-faint);
       font-size: 13px;
+      color: var(--cream-faint);
     }
-    footer .credit {
+    footer a {
+      color: var(--gold-soft);
+      text-decoration: none;
+      margin: 0 12px;
       font-family: 'Tenor Sans', sans-serif;
       font-style: normal;
       font-size: 11px;
       letter-spacing: 0.4em;
+      text-transform: uppercase;
+    }
+    footer a:hover { color: var(--cream); }
+    footer .credit {
+      display: block;
+      margin-top: 18px;
+      font-family: 'Tenor Sans', sans-serif;
+      font-style: normal;
+      font-size: 10.5px;
+      letter-spacing: 0.4em;
       color: var(--gold-soft);
       text-transform: uppercase;
-      margin-top: 6px;
-      display: block;
     }
 
-    a { color: var(--gold); }
-    a:hover { color: var(--cream); }
-
     @media (max-width: 480px) {
-      .wrap { padding: 40px 22px 72px; }
-      h1 { font-size: 30px; }
-      h2 { font-size: 24px; }
-      body { font-size: 16px; }
-      .toc { gap: 16px; }
-      .toc a { font-size: 10px; letter-spacing: 0.3em; }
+      .wrap { padding: 40px 22px 64px; }
+      .hero { padding: 16px 0 32px; }
+      .mark { width: 80px; height: 80px; margin-bottom: 24px; }
+      h1 { font-size: 42px; }
+      .lede { font-size: 17px; }
+      section h2 { font-size: 24px; }
+      footer a { display: inline-block; margin: 6px 8px; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <div class="mark" aria-hidden="true"></div>
 
-    <span class="eyebrow">— Still Point —</span>
-    <h1>The agreement, plainly stated.</h1>
-    <p class="subtitle">Terms of Service and Privacy Policy.</p>
-
-    <nav class="toc" aria-label="Sections">
-      <a href="#terms">Terms</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- ============================================================
-         TERMS OF SERVICE
-         ============================================================ -->
-    <section id="terms">
-      <span class="eyebrow">— Terms of Service —</span>
-      <h2>The agreement, plainly stated.</h2>
-
-      <h3>What this app is</h3>
-      <p>Still Point is a contemplative practice app organized around seventy original illustrated figures. It is not a fortune-telling service, not medical or psychological advice, and not a substitute for human counsel. The figures visit; they do not predict.</p>
-
-      <h3>Use of the app</h3>
-      <p>By using Still Point you agree to use it for personal, non-commercial purposes. You will not redistribute, modify, reverse-engineer, or republish the figure imagery, the authored field-guide text, or any other content shipped with the app. The deck and its language are the work of JvBAtelierDesigns.</p>
-
-      <h3>Subscriptions</h3>
-      <p>Subscriptions are billed through your Apple ID and managed by Apple. Monthly and yearly plans renew automatically until cancelled at least 24 hours before the end of the current period. The 7-day free trial converts to a paid subscription unless cancelled before it ends. Lifetime access is a one-time purchase that does not renew. You may cancel or change your plan at any time from Settings → Subscription, which opens Apple's subscription management.</p>
-
-      <h3>Privacy</h3>
-      <p>Still Point holds no account system. There is no email, no password, no login. Your visits, reflections, and preferences live on your device and sync privately to your other Apple devices through iCloud. There is no Still Point server. No analytics, no third-party tracking. See the Privacy section below for details.</p>
-
-      <h3>Disclaimers</h3>
-      <p>Still Point is provided as-is, without warranties of any kind. The interpretations are reflective in nature and are not advice. The author is not liable for decisions made on the basis of any visit, reflection, or pattern observation surfaced by the app.</p>
-
-      <h3>Changes</h3>
-      <p>These terms may be updated as the app evolves. Material changes will be communicated within the app. Continued use after an update constitutes acceptance.</p>
+    <section class="hero">
+      <div class="mark" aria-hidden="true"></div>
+      <span class="eyebrow">— Still Point —</span>
+      <h1>A daily quiet.</h1>
+      <p class="lede">Seventy original illustrated figures who visit, one at a time, with a single observation for the day.</p>
     </section>
 
-    <div class="divider" role="separator"></div>
-
-    <!-- ============================================================
-         PRIVACY POLICY
-         ============================================================ -->
-    <section id="privacy">
-      <span class="eyebrow">— Privacy —</span>
-      <h2>What we keep, what we don't.</h2>
-
-      <p>Still Point does not have an account system. There is no email, no password, no login.</p>
-
-      <p>Your visits, reflections, and preferences live on your device, synced privately to your other Apple devices through your iCloud account. Apple sees encrypted data only. Still Point never sees any of it — there is no Still&nbsp;Point server.</p>
-
-      <p>No analytics, no tracking, no third-party SDKs. The figures visit; the journal keeps; nothing leaves your devices.</p>
+    <section>
+      <p>It is not a fortune-telling app. The figures do not predict the future. They do not tell you what to do. They visit you, one at a time, and offer one kind of attention.</p>
+      <p>Each morning, one figure arrives. You sit with the painting, the name, and one of nine quiet observations — an hour, a kind of weather, what is heard there, what grows, what is asked of you, what is taught. Some figures arrive upright. Some arrive reversed. Both are honest.</p>
+      <p>When you ask, you may also draw — One Figure for a single visit, or The Three for what is true, what to attend to, what stays.</p>
     </section>
 
-    <div class="divider" role="separator"></div>
+    <section>
+      <h2><span class="eyebrow">— What's inside —</span></h2>
+      <ul class="features">
+        <li>
+          <strong>A figure each morning.</strong>
+          <span>One figure visits. The full Field Guide entry — painting, name, hour, weather, what is heard, what grows, what this asks, what this teaches.</span>
+        </li>
+        <li>
+          <strong>Seventy illustrated figures, five wings.</strong>
+          <span>Central, Water, Earth, Sky, Fire. Fourteen figures in each wing.</span>
+        </li>
+        <li>
+          <strong>One Figure and The Three readings.</strong>
+          <span>Draw a single figure for a focused visit, or The Three for what is true, what to attend to, what stays.</span>
+        </li>
+        <li>
+          <strong>A journal that keeps every visit.</strong>
+          <span>On your device, with notes you may attach. Pattern cards thread through the timeline.</span>
+        </li>
+        <li>
+          <strong>A patterns engine.</strong>
+          <span>Single-draw observations across The Three, plus behavioral patterns over your last fortnight.</span>
+        </li>
+        <li>
+          <strong>The Sunday Weekly Read.</strong>
+          <span>A quiet summary each Sunday morning — the figures who came, the wing concentrations, the through-lines of the week.</span>
+        </li>
+      </ul>
+    </section>
 
-    <!-- ============================================================
-         CONTACT
-         ============================================================ -->
-    <section id="contact">
-      <span class="eyebrow">— Contact —</span>
-      <h2>Questions are welcome.</h2>
-      <p>Questions, concerns, or notes about the practice are welcome at <a href="mailto:baberainbow@gmail.com">baberainbow@gmail.com</a>.</p>
+    <section>
+      <h2><span class="eyebrow">— Begin with seven days —</span></h2>
+      <div class="tiers">
+        <div class="tier">
+          <span class="tier-label">Monthly</span>
+          <span class="tier-price">$6.99 / month</span>
+          <span class="tier-note">Seven days free, then monthly.</span>
+        </div>
+        <div class="tier featured">
+          <span class="tier-tag">Recommended</span>
+          <span class="tier-label">Yearly</span>
+          <span class="tier-price">$49.99 / year</span>
+          <span class="tier-note">Seven days free. Roughly $4 a month.</span>
+        </div>
+        <div class="tier dashed">
+          <span class="tier-label">Lifetime</span>
+          <span class="tier-price">$79.99 once</span>
+          <span class="tier-note">One payment. The full practice.</span>
+        </div>
+      </div>
+      <p class="free-line">Free tier — three visits each week, plus the daily card.</p>
+    </section>
+
+    <section>
+      <h2><span class="eyebrow">— Held privately —</span></h2>
+      <div class="privacy">
+        <p>Still Point holds no account system. There is no email, no password, no login.</p>
+        <p>Your visits, reflections, and preferences live on your device, synced privately to your other Apple devices through your iCloud account. Apple sees encrypted data only. Still Point never sees any of it — there is no Still&nbsp;Point server.</p>
+        <p>No analytics, no tracking, no third-party SDKs. The figures visit; the journal keeps; nothing leaves your devices.</p>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="cta">
+        <a href="https://apps.apple.com/app/id6766701686" class="cta-btn">Visit on the App Store</a>
+        <p class="cta-note">iPhone — iOS 17 and later.</p>
+      </div>
     </section>
 
     <footer>
+      <a href="legal.html#privacy">Privacy</a>
+      <a href="legal.html#terms">Terms</a>
+      <a href="mailto:baberainbow@gmail.com">Contact</a>
       <span class="credit">By @JvBAtelierDesigns</span>
     </footer>
   </main>

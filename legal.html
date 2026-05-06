@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Still Point — Terms of Service & Privacy</title>
+  <meta name="description" content="Still Point. Terms of Service and Privacy Policy. By @JvBAtelierDesigns.">
+
+  <!-- Cardo (italic) for prose, Tenor Sans for tracked headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;1,400&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:           #0E0E12;
+      --surface:      #16161A;
+      --cream:        #E8DFD0;
+      --cream-soft:   #C7BDA9;
+      --cream-muted:  #9A958C;
+      --cream-faint:  #6E6A65;
+      --gold:         #C9A14A;
+      --gold-soft:    #9D7E3A;
+      --gold-deep:    #7A5F2A;
+      --border:       #2A2A30;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg:          #F2EBDC;
+        --surface:     #EAE2D2;
+        --cream:       #2A2620;
+        --cream-soft:  #4A453E;
+        --cream-muted: #6E6863;
+        --cream-faint: #9A958C;
+        --gold:        #9D7E3A;
+        --gold-soft:   #7A5F2A;
+        --gold-deep:   #5A4520;
+        --border:      #D2C9B5;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--cream-soft);
+      font-family: 'Cardo', Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 17px;
+      line-height: 1.62;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 28px 96px;
+    }
+
+    /* ---- Brand mark ---- */
+    .mark {
+      width: 80px;
+      height: 80px;
+      margin: 8px auto 24px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 32% 26%, rgba(255,244,208,0.6), rgba(244,216,138,0) 40%),
+        radial-gradient(circle at 35% 30%,
+          #F4D88A 0%,
+          #E8C778 20%,
+          #C9A14A 50%,
+          #9D7E3A 80%,
+          #7A5F2A 100%);
+      box-shadow:
+        0 0 0 1px rgba(201,161,74,0.15),
+        0 0 24px rgba(201,161,74,0.18),
+        0 0 60px rgba(201,161,74,0.10);
+    }
+
+    /* ---- Headings ---- */
+    .eyebrow {
+      display: block;
+      font-family: 'Tenor Sans', sans-serif;
+      font-style: normal;
+      font-size: 11.5px;
+      letter-spacing: 0.4em;
+      color: var(--gold);
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-family: 'Cardo', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.2;
+      color: var(--cream);
+      text-align: center;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--cream-muted);
+      font-size: 16.5px;
+      margin: 0 0 36px;
+    }
+
+    h2 {
+      font-family: 'Cardo', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.25;
+      color: var(--cream);
+      margin: 0 0 12px;
+    }
+
+    h3 {
+      font-family: 'Tenor Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      letter-spacing: 0.45em;
+      color: var(--gold-soft);
+      text-transform: uppercase;
+      margin: 28px 0 10px;
+    }
+
+    /* ---- Section divider ---- */
+    .divider {
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        var(--gold-soft) 50%,
+        transparent 100%);
+      opacity: 0.5;
+      margin: 56px 0;
+    }
+
+    /* ---- Body prose ---- */
+    p {
+      color: var(--cream-soft);
+      margin: 0 0 18px;
+      /* text-wrap: pretty avoids single-word last-line widows in supporting
+         browsers (Chrome 117+, Safari 17.4+, Firefox 121+). Older browsers
+         ignore it gracefully. */
+      text-wrap: pretty;
+    }
+    h1, h2, .subtitle { text-wrap: balance; }
+
+    /* ---- Table of contents ---- */
+    .toc {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin: 0 0 48px;
+      padding: 14px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .toc a {
+      font-family: 'Tenor Sans', sans-serif;
+      font-style: normal;
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .toc a:hover { color: var(--cream); }
+
+    /* ---- Footer ---- */
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--cream-faint);
+      font-size: 13px;
+    }
+    footer .credit {
+      font-family: 'Tenor Sans', sans-serif;
+      font-style: normal;
+      font-size: 11px;
+      letter-spacing: 0.4em;
+      color: var(--gold-soft);
+      text-transform: uppercase;
+      margin-top: 6px;
+      display: block;
+    }
+
+    a { color: var(--gold); }
+    a:hover { color: var(--cream); }
+
+    @media (max-width: 480px) {
+      .wrap { padding: 40px 22px 72px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 24px; }
+      body { font-size: 16px; }
+      .toc { gap: 16px; }
+      .toc a { font-size: 10px; letter-spacing: 0.3em; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="mark" aria-hidden="true"></div>
+
+    <span class="eyebrow">— Still Point —</span>
+    <h1>The agreement, plainly stated.</h1>
+    <p class="subtitle">Terms of Service and Privacy Policy.</p>
+
+    <nav class="toc" aria-label="Sections">
+      <a href="#terms">Terms</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ============================================================
+         TERMS OF SERVICE
+         ============================================================ -->
+    <section id="terms">
+      <span class="eyebrow">— Terms of Service —</span>
+      <h2>The agreement, plainly stated.</h2>
+
+      <h3>What this app is</h3>
+      <p>Still Point is a contemplative practice app organized around seventy original illustrated figures. It is not a fortune-telling service, not medical or psychological advice, and not a substitute for human counsel. The figures visit; they do not predict.</p>
+
+      <h3>Use of the app</h3>
+      <p>By using Still Point you agree to use it for personal, non-commercial purposes. You will not redistribute, modify, reverse-engineer, or republish the figure imagery, the authored field-guide text, or any other content shipped with the app. The deck and its language are the work of JvBAtelierDesigns.</p>
+
+      <h3>Subscriptions</h3>
+      <p>Subscriptions are billed through your Apple ID and managed by Apple. Monthly and yearly plans renew automatically until cancelled at least 24 hours before the end of the current period. The 7-day free trial converts to a paid subscription unless cancelled before it ends. Lifetime access is a one-time purchase that does not renew. You may cancel or change your plan at any time from Settings → Subscription, which opens Apple's subscription management.</p>
+
+      <h3>Privacy</h3>
+      <p>Still Point holds no account system. There is no email, no password, no login. Your visits, reflections, and preferences live on your device and sync privately to your other Apple devices through iCloud. There is no Still Point server. No analytics, no third-party tracking. See the Privacy section below for details.</p>
+
+      <h3>Disclaimers</h3>
+      <p>Still Point is provided as-is, without warranties of any kind. The interpretations are reflective in nature and are not advice. The author is not liable for decisions made on the basis of any visit, reflection, or pattern observation surfaced by the app.</p>
+
+      <h3>Changes</h3>
+      <p>These terms may be updated as the app evolves. Material changes will be communicated within the app. Continued use after an update constitutes acceptance.</p>
+    </section>
+
+    <div class="divider" role="separator"></div>
+
+    <!-- ============================================================
+         PRIVACY POLICY
+         ============================================================ -->
+    <section id="privacy">
+      <span class="eyebrow">— Privacy —</span>
+      <h2>What we keep, what we don't.</h2>
+
+      <p>Still Point does not have an account system. There is no email, no password, no login.</p>
+
+      <p>Your visits, reflections, and preferences live on your device, synced privately to your other Apple devices through your iCloud account. Apple sees encrypted data only. Still Point never sees any of it — there is no Still&nbsp;Point server.</p>
+
+      <p>No analytics, no tracking, no third-party SDKs. The figures visit; the journal keeps; nothing leaves your devices.</p>
+    </section>
+
+    <div class="divider" role="separator"></div>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact">
+      <span class="eyebrow">— Contact —</span>
+      <h2>Questions are welcome.</h2>
+      <p>Questions, concerns, or notes about the practice are welcome at <a href="mailto:baberainbow@gmail.com">baberainbow@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      <span class="credit">By @JvBAtelierDesigns</span>
+    </footer>
+  </main>
+</body>
+</html>
